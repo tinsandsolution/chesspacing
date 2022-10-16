@@ -12,6 +12,10 @@ turn them into flashcards
 
 review them using spaced repetition
 
+# DB Schema
+
+![dbschema](schema.png)
+
 # API Routes
 
 ## Endpoints needing authentication
@@ -30,10 +34,12 @@ Sign up user: POST /users
 
 ## Card stuff
 
-Get cards: GET /cards
+Get all cards: GET /cards
 Create card: POST /cards
-Edit card: PUT /cards
-Delete card: DELETE /cards
+Get one card: GET /cards:cardId
+Edit card: PUT /cards/:cardId
+Delete card: DELETE /cards/:cardId
+
 
 Note: the idea with each card is that they're probably going to be encoded as FEN or PGN codes.
 
@@ -44,3 +50,5 @@ Now, it shouldn't take too much trouble to allow for both codes.
 There's assorted data like "relevant game", etc.
 
 There's scheduling data associated with each game!
+
+Sanitizing the data input is going to be complicated. Cards are formatted in HTML, which makes things tricky.
