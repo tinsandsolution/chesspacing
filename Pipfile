@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pillow = "8.3.2"
+fitz = "*"
+numpy = "==1.21.2"
+jupyter = "*"
+pymupdf = "==1.18.19"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
