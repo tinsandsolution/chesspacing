@@ -1,0 +1,5 @@
+so, we start off with using pgn-extract in pgn-unpacker which splits up a PGN file into individual PGNS. obtain the pgn of your reportoire from chesstempo.
+
+PGNs_to_PGNs_to_analyze.py takes those PGNS and produces FENS. remember that if you're processing stuff for black, like the modern defense, doing_black_reportoire = True
+
+run PGNs_to_analyze_to_single_upgraded_pgn.py it spits out pgn for the reportoire that you can import into chesstempo

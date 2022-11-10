@@ -1,0 +1,31 @@
+pgn-extract.exe --splitvariants -#1 ModernDefenseBlack.pgn
+
+once you have the file, you can do this in notepad++:
+
+find (without the period matching a newline): (^1\..*)\r\n 
+replace with: \1 
+note that there is a space afterwards
+
+there are other regex commands to do which involve taking out the stuff in brackets
+and like, newlines. but i won't bother writing them down because i know them by heart.
+
+well actually here they are:
+
+find: \[.*\]
+replace with:
+
+find: \r
+replace with: \n
+
+(then we run this multiple times)
+
+find: \n\n
+replace with: \n 
+
+find: ^(.*)
+replace with: "\1",
+
+
+this code isn't actually perfect and is a lazy stopgap measure. 
+there's a notepad++ macro i have that does these steps, making it easy to do stuff.
+

@@ -1,0 +1,17 @@
+r = requests.get('https://explorer.lichess.ovh/lichess?variant=standard&speeds[]=blitz&speeds[]=rapid&speeds[]=classical&ratings[]=2200&ratings[]=2500&fen=rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2')
+
+https://explorer.lichess.ovh/lichess?
+	variant=standard&
+	speeds[]=blitz&
+	speeds[]=rapid&
+	speeds[]=classical&
+	ratings[]=1600&
+	ratings[]=1800&
+	ratings[]=2000&
+	ratings[]=2200&
+	ratings[]=2500&
+	recentGames=0&
+	moves=20&
+	topGames=0&	fen=rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2
+
+https://explorer.lichess.ovh/lichess?variant=standard&speeds[]=blitz&speeds[]=rapid&speeds[]=classical&ratings[]=1600&ratings[]=1800&ratings[]=2000&ratings[]=2200&ratings[]=2500&recentGames=0&moves=20&topGames=0&fen=rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 0 2
